@@ -1,8 +1,7 @@
-import Link from "next/link"
-
 
 const Navbar = () => {
 
+    
     const navItems = [
         {
             name: '// about',
@@ -28,12 +27,13 @@ const Navbar = () => {
     ]
 
     return(<div className="py-10 grid place-content-center">
+       
         <nav className="text-darkgray">
             <ul className="flex">
                 {/* <p className="px-2 font-medium ">{"<nav>"}</p> */}
                 {navItems.map((item, i)=>{
                     return(<li className="font-medium px-2" key={i}>
-                        <Link href={item.link}>{item.name}</Link>
+                        <a href={item.link} className="bg-darkgray rounded-xl px-5 py-3 text-chalk">{item.name}</a>
                     </li>)
                 })}
                 {/* <p className="px-2 font-medium ">{"</nav>"}</p> */}

@@ -5,12 +5,13 @@ import Navbar from './Navbar';
 
 const Intro = () => {
     return(
-      <div id='intro' className='h-screen rounded-xl bg-chalk'>
+      <div id='intro' className='bg-dark h-138 m-1 rounded-xl bg-dark'>
         <Navbar/>
-        <motion.div whileHover={{translateY: -10}}  className='px-40 flex text-darkgray'>
-        <motion.h1 className='text-7xl font-bold mr-4'>{"ojassingh≫ "}</motion.h1>
+        <motion.div whileHover={{translateY: -5}}  className='mt-16 px-40 flex text-black'>
+        <motion.h1 className='text-chalk text-7xl font-bold mr-4'>{"ojassingh≫ "}</motion.h1>
         <h1 className='text-7xl text-blue-500 font-bold'><Typewriter
             onInit={(typewriter) => {
+              
               typewriter
                 .changeDelay(50)
                 .typeString("hi, I'm Ojas!")
@@ -29,20 +30,20 @@ const Intro = () => {
                 .typeString("dragon warrior?")
                 .pauseFor(1000)
                 .deleteAll(50)
-                .typeString("welcome :)")
+                .typeString("Namaste :)")
                 .start();
             }}
         /></h1>
         </motion.div>
-        <motion.div  whileHover={{translateY: -10}}  className='ml-3 mt-10 px-40 '>
+        <motion.div  whileHover={{translateY: -7}}  className='ml-3 mt-10 px-40 '>
           <p className='mt-3 text-lg text-blue-500 tracking-wide'>{"<div id='super-cool-description' >"}</p>
             <div className='mt-3 ml-6 border-l-2 border-gray-500/50'>
                 <h3 className='ml-4 mt-2 text-lg text-blue-500 tracking-wide'>
                     {/* {"<h3>"} <span className='text-2xl font-medium '>I love building impactful web applications.</span> {"</h3>"} */}
-                    {"<h3>"} <span className='text-gray-600 text-2xl font-normal '>your friendly neighbourhood full-stack developer.</span> {"</h3>"}
+                    {"<h3>"} <span className=' text-chalk  text-2xl font-normal '>your friendly neighbourhood full-stack developer.</span> {"</h3>"}
                 </h3>
 
-                <div id='description' className=' text-gray-600 ml-4'>
+                <div id='description' className='text-chalk  ml-4'>
                   <p className='text-lg text-blue-500 tracking-wide'>
                       {"<p>"}
                   </p>  
@@ -56,16 +57,17 @@ const Intro = () => {
             </div>
           <p className='mt-2 text-lg text-blue-500 tracking-wide'>{"</div>"}</p>
         </motion.div>
-        <div className='mt-8 ml-80 flex scale-125 text-darkgray'>
-            <p className=''>Let's connect. Here are my socials: </p>
-            <div className='ml-7 flex scale-150 text-blue-500'>
+        <motion.div  whileHover={{translateY: -7}}  className='flex ml-3 mt-10 px-40 '>
+          <p className='text-chalk text-lg'>Let's connect. Here are my socials: </p>
+          <div className='ml-10 flex scale-150 text-blue-500'>
               <motion.a whileHover={{translateY: -5}} className='mr-1'><UilLinkedin/></motion.a>
               <motion.a whileHover={{translateY: -5}} className='mr-1'><UilGithub/></motion.a>
               <motion.a whileHover={{translateY: -5}} className='mr-1'><UilEnvelopeAlt/></motion.a>
-            </div>
-        </div>
+          </div>
+        </motion.div>
       </div>
     )
 }
 
 export default Intro;
+

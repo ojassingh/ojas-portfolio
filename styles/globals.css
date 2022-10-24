@@ -34,7 +34,18 @@ a {
 }
 @media (prefers-color-scheme: dark) {
   body {
-    background: #0D0D0D;
-    /* background: #F2F2F2; */
+    background: #000000;
+
   }
 }
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: blue;
+  transform-origin: 0%;
+}
+    /* background: #F2F2F2; */
