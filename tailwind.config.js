@@ -3,6 +3,8 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    './node_modules/flowbite/**/*.js',
+    './src/**/*.html'
   ],
   theme: {
     extend: {
@@ -26,7 +28,10 @@ module.exports = {
       },
 
       spacing: {
+        'project': '100rem',
+        '5000': '49.5%',
         '50': '14rem',
+        '55': '16rem',
         '60': '24rem',
         '100': '28rem',
         '110': '32rem',
@@ -49,7 +54,10 @@ module.exports = {
         'dark': '#0D0D0D',
         'pinkish': '#D93B92',
         'yellowish': '#F2EA79',
-        'purple': '#1D1C40'
+        'purple': '#1D1C40',
+        'projbg': '#031E22',
+        'projtext': '#14E3AC',
+        'projcomp': '#14E3AC'
       },
       letterSpacing: {
         tightest: '-.075em',
@@ -86,6 +94,7 @@ module.exports = {
         'md': '0.375rem',
         'lg': '0.5rem',
         'mid': '3.0rem',
+        'midxl': '4.0rem',
         'xl': '7.0rem',
         'full': '9999px',
         'large': '12px',
@@ -93,5 +102,5 @@ module.exports = {
       
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 }

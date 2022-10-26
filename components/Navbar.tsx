@@ -1,4 +1,4 @@
-
+import { motion } from "framer-motion"
 const Navbar = () => {
 
     
@@ -32,9 +32,10 @@ const Navbar = () => {
             <ul className="flex">
                 {/* <p className="px-2 font-medium ">{"<nav>"}</p> */}
                 {navItems.map((item, i)=>{
-                    return(<li className="font-medium px-2" key={i}>
-                        <a href={item.link} className="bg-darkgray rounded-xl px-5 py-3 text-chalk">{item.name}</a>
-                    </li>)
+                    return(<motion.li  whileHover={{scale: 1.05}} className="font-medium px-2" key={i}>
+                            <motion.a href={item.link} className="bg-darkgray rounded-xl px-5 py-3 text-chalk">{item.name}</motion.a>
+                    </motion.li>
+                    )
                 })}
                 {/* <p className="px-2 font-medium ">{"</nav>"}</p> */}
             </ul>

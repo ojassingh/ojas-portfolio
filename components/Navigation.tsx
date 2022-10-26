@@ -3,10 +3,11 @@ import { motion } from 'framer-motion';
 
 const Navigation = () => {
     return(
-        <div>
+        <div className='px-4'>
         <div className="flex gap-2">
-            <motion.div whileHover={{scale: 0.97}} className="rounded-mid bg-secondary h-80 w-135">
-                <motion.a whileHover={{scale: 0.97}} href="#projects" className=" h-80 grid place-content-center text-white font-medium">
+            <motion.div whileHover={{scale: 0.97}} className="rounded-mid bg-secondary h-84 w-135 grid place-content-center">
+                <motion.a whileHover={{scale: 1.05}} href="#projects" className="  ml-10 grid h-84 text-white font-medium text-6xl">
+                    Take a look at my craft.
                 </motion.a>
             </motion.div>
             <div>
@@ -21,8 +22,8 @@ const Navigation = () => {
                     
                 </div>
                 <div>
-                    <motion.div whileHover={{scale: 0.98}} className="mt-2 h-40  bg-orange rounded-mid">
-                        <motion.a whileHover={{scale: 1.05}} className='h-40 grid place-content-center text-4xl text-white font-medium'>Get in touch with me.</motion.a>
+                    <motion.div  whileHover={{scale: 0.98}} className="mt-2 h-40  bg-orange rounded-mid">
+                        <motion.a href='#contact' whileHover={{scale: 1.05}} className='h-40 grid place-content-center text-4xl text-white font-medium'>Get in touch with me.</motion.a>
                     </motion.div>
                 </div>
             </div>
