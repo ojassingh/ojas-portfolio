@@ -111,7 +111,7 @@ module.exports = {
       },
       screens: {
 
-        'xs': {'max': '639'},
+        'xs': {'min': '300px', 'max': '639px'},
 
         // ...defaultTheme.screens,
       }, 

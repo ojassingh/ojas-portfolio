@@ -10,8 +10,8 @@ import Footer from '../components/Footer';
 const Home: NextPage = () => {
   return (
     <div className='overflow-x-clip h-screen scrollbar-thin scrollbar scrollbar-thumb-projcomp scrollbar-rounded-full'>
-      <div className='bg-dark flex md:flex-wrap'>
-      <div className='flex-1 lg:fixed lg:right-10 lg:bottom-28 md:sticky'>
+      <div className='bg-dark lg:flex md:flex-wrap'>
+      <div className='flex-1 lg:fixed lg:right-10 lg:bottom-28 md:sticky xs:hidden'>
         <Navbar/>
       </div>
       <div className='flex-3'>
