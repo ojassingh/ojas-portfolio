@@ -12,6 +12,11 @@ module.exports = {
         preflight: true,
       },
 
+      scale: {
+        '175': '1.75',
+        '200': '2.00'
+      },
+
       animation: {
         marquee: 'marquee 15s linear infinite',
         marquee2: 'marquee2 15s linear infinite',
@@ -39,6 +44,8 @@ module.exports = {
         '128': '38rem',
         '135': '50%',
         '138': '48rem',
+        '145': '52rem',
+        '155': '60rem',
       }, 
       // width: {
       //   '128': '40rem',
@@ -57,7 +64,8 @@ module.exports = {
         'purple': '#1D1C40',
         'projbg': '#031E22',
         'projtext': '#14E3AC',
-        'projcomp': '#14E3AC'
+        'projcomp': '#14E3AC',
+        'extrablue': '#1A57DA',
       },
       letterSpacing: {
         tightest: '-.075em',
@@ -102,5 +110,9 @@ module.exports = {
       
     },
   },
-  plugins: [require('flowbite/plugin')],
+  plugins: [
+    require('flowbite/plugin'),
+    // require('tailwind-scrollbar'),
+    require('tailwind-scrollbar')({ nocompatible: true }),
+  ],
 }

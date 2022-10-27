@@ -70,48 +70,47 @@ const Projects = () => {
     };
 
     return(
-      <div id='projects' className='rounded-xl bg-dark'>
-
-          <h1 className='px-40 pt-20 text-6xl text-white text-chalk text-right font-bold'>selected-works [4]</h1>
-          <div id="general-projects" className="m-20">
-          <div id="featured-project">
+      <div id='projects' className='mt-10'>
+          <h1 className='px-40 text-6xl text-white text-chalk font-bold'>≫ selected-works</h1>
+          <div id="general-projects" className="px-40 pt-10 pb-20">
+          <div id="featured-project" className="w-155">
             <a href="https://www.youtube.com" target='_blank'>
               <motion.div initial="rest" whileHover="hover"
               variants={slashMotion} 
               id="featured" className="bg-chalk rounded-midxl">
                 <div>
-                <div className="text-blue-700 z-20 px-20 pt-10 flex place-content-between font-semibold text-lg">
-                  <p className="">[01]</p>
+                <motion.div variants={slashMotion} className="text-blue-700 z-20 px-20 pt-10 flex place-content-between font-semibold text-lg">
+                  <p  className="">[01]</p>
                   <Link href="youtube.com"><p className="scale-150"><UilGithub/></p></Link>
                   <p className="">Featured</p>
-                </div>
+                </motion.div>
                 <motion.h1  
                 variants={textMotion} 
                 className="h-40 z-0 h-55 text-blue-700  font-semibold text-6xl grid text-center grid place-content-center">ACE U</motion.h1>
                 <div className="-mt-20 py-10 grid place-content-center text-center">
                   <p>Hello</p>
                 </div>
-                <div className="text-blue-700  z-20 px-20 pb-10 flex place-content-between font-semibold text-lg">
+                <motion.div variants={slashMotion} className="text-blue-700  z-20 px-20 pb-10 flex place-content-between font-semibold text-lg">
                   <p className="">Launch Project</p>
                   <p className=""><UilArrowUpRight/></p>
-                </div>
+                </motion.div>
                 </div>
               </motion.div>
             </a>
           </div>
 
-          <div id="other-project" className="flex flex-wrap mt-2 gap-2">
+          <div id="other-project" className="flex flex-wrap mt-2 gap-2 w-155">
 
           {project_list.map((project, i)=>{
             return(
               <a key={project.id} href={project.link} target='_blank' className="w-5000">
               <motion.div initial="rest" whileHover="hover"
               variants={slashMotion} 
-              id="featured" className="bg-blue-900 rounded-midxl">
-                <div className="z-20 px-20 pt-10 flex place-content-between font-semibold text-lg text-projtext">
+              id="featured" className="bg-extrablue/20 rounded-midxl">
+                <motion.div variants={slashMotion} className="z-20 px-20 pt-10 flex place-content-between font-semibold text-lg text-projtext">
                   <p className="">[0{i+2}]</p>
                   <Link href={project.link}><p className="scale-150"><UilGithub/></p></Link>
-                </div>
+                </motion.div>
                 <motion.h1  
                 variants={textMotion} 
                 className="h-40 z-0 text-chalk font-semibold text-5xl grid text-center grid place-content-center">
@@ -120,10 +119,10 @@ const Projects = () => {
                 <div className="-mt-4 pb-10 grid place-content-center text-projtext text-center">
                   <p className="font-medium">{project.techStack}</p>
                 </div>
-                <div className="text-projtext z-20 px-20 pb-10 flex place-content-between text-lg">
+                <motion.div variants={slashMotion} className="text-projtext z-20 px-20 pb-10 flex place-content-between text-lg">
                   <p className="">Launch Project</p>
                   <p className=""><UilArrowUpRight/></p>
-                </div>
+                </motion.div>
               </motion.div>
             </a>
             )

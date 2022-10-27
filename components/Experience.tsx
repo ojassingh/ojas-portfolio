@@ -1,58 +1,45 @@
-import {Timeline, Button} from 'flowbite-react'
+import { Tab } from '@headlessui/react'
 
 const Experience = () => {
-    return(<div className="bg-dark rounded-xl">
-        <div className="px-40 py-20">
-            <h1 className="text-6xl text-chalk font-semibold">work-experience</h1>
-            <div id="descrition-section" className="">
-                <div id="tabs"></div>
-                <div id="content" className='text-chalk'>
-                <Timeline>
-                <Timeline.Item>
-                    <Timeline.Point />
-                    <Timeline.Content>
-                    <Timeline.Time>
-                        February 2022
-                    </Timeline.Time>
-                    <Timeline.Title>
-                        Application UI code in Tailwind CSS
-                    </Timeline.Title>
-                    <Timeline.Body>
-                        Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.
-                    </Timeline.Body>
-                    </Timeline.Content>
-                </Timeline.Item>
-                <Timeline.Item>
-                    <Timeline.Point />
-                    <Timeline.Content>
-                    <Timeline.Time>
-                        March 2022
-                    </Timeline.Time>
-                    <Timeline.Title>
-                        Marketing UI design in Figma
-                    </Timeline.Title>
-                    <Timeline.Body>
-                        All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.
-                    </Timeline.Body>
-                    </Timeline.Content>
-                </Timeline.Item>
-                <Timeline.Item>
-                    <Timeline.Point />
-                    <Timeline.Content>
-                    <Timeline.Time>
-                        April 2022
-                    </Timeline.Time>
-                    <Timeline.Title>
-                        E-Commerce UI code in Tailwind CSS
-                    </Timeline.Title>
-                    <Timeline.Body>
-                        Get started with dozens of web components and interactive elements built on top of Tailwind CSS.
-                    </Timeline.Body>
-                    </Timeline.Content>
-                </Timeline.Item>
-                </Timeline>
-                </div>
+    return(<div id='work' className="text-chal pb-10 px-40">
+        <h1 className='text-6xl text-white text-chalk font-bold'>≫ work-experience</h1>  
+        <div className=''>
+        <div id='timeline' className='text-chalk'>
+                    <div id='latest' className='px-20 pt-10 pb-6 rounded-midxl bg-black mt-10 w-145'>
+                    <div id='border' className='description border-l-2 -ml-3'>
+                        <div className='px-2'>
+                        <h3 className='text-blue-500 font-semibold text-2xl px-3'>Machine Learning Engineer @ Omdena</h3>
+                        <h4 className='px-4 text-projtext/80 py-2'>Sept 2020 - Dec 2020 • Part-time</h4>
+                            <div id='description' className='px-10'>
+                                <ul className='list-disc chalk pt-4 leading-flow text-md'>
+                                    <li>Modelled parameters of economic "well-being" through machine learning and satellite imagery</li>
+                                    <li>Collaborated with ActiveLoop and the World Resource Institute (WRI) to access labelled data and create ML Pipelines. </li>
+                                    <li>Researched Sentinel-2, OSM, SOI data, etc. to find patters in parameters.</li>
+                                    <li>Pre-processed the provincial Census and HDI data for pattern-recognition.</li>
+                                    <li>Implemented support Vector Machine modelling of HDI data for district-wise mapping.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                <div id='2' className=''>
+                    <div id='2' className='px-20 py-10 rounded-midxl bg-black mt-2 w-145'>
+                  <div id='border' className='description border-l-2 -ml-3'>
+                        <div className='px-2'>
+                        <h3 className='text-blue-500 font-semibold text-2xl px-3'>Data Science Intern @ MEIT</h3>
+                        <h4 className='px-4 text-projtext/80'>Sept 2020 - Dec 2020 • Full-time </h4>
+                        <div id='description' className='px-10'>
+                                <ul className='list-disc text-chalk pt-4 leading-flow text-md'>
+                                    <li>Pre-processed a dataset of 2000+ images of cards using SciKit-Image.</li>
+                                    <li>Trained and deployed a Faster Region Based Convolutional Neural Network (Faster R-CNN) model for object-detection. </li>
+                                    <li>Developed a proof-of-concept to deploy this model on CCTV footages via Pytorch.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
+        </div>
         </div>
     </div>)
 }
