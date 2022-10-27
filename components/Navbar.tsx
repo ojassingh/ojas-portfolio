@@ -44,7 +44,7 @@ const Navbar = () => {
                 {/* <p className="px-2 font-medium ">{"<nav>"}</p> */}
                 {navItems.map((item, i)=>{
                     return(<motion.li  whileHover={{scale: 1.05}} className="font-medium px-2 text-right text-lg" key={i}>
-                            <motion.a href={item.link} className="px-5 py-3 text-projcomp">{item.name}</motion.a>
+                            <motion.a href={item.link} className="px-5 py-3 text-projcomp scroll-smooth">{item.name}</motion.a>
                     </motion.li>
                     )
                 })}

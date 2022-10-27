@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
   return (
-    <div className='overflow-x-clip h-screen scrollbar-thin scrollbar scrollbar-thumb-projcomp scrollbar-rounded-full '>
+    <div className='overflow-x-clip h-screen scrollbar-thin scrollbar scrollbar-thumb-projcomp scrollbar-rounded-full'>
       <div className='bg-dark flex'>
       <div className='flex-3'>
         <Intro/>

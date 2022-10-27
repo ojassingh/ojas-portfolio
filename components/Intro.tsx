@@ -42,7 +42,7 @@ const Intro = () => {
                       {"<p>"}
                   </p>  
                   <div className='w-128 border-l-2 border-gray-500/50 ml-4'>
-                    <p className='text-lg ml-2 text-md leading-flow'>My name is Ojas Singh, and I am a full-stack developer and student based in Toronto. I have a vested interest in deep learning, cooking and playing tennis. Fun fact: I make amazing butter chicken and I own a pair of Crocs with Lightening McQueen jibbitz.</p>
+                    <p className='text-lg ml-2 text-md leading-flow'>My name is Ojas Singh, and I am a full-stack developer and student based in Toronto. I have a vested interest in deep learning, cooking and playing tennis. Fun fact: I make amazing butter chicken and I own a pair of Crocs with Lightning McQueen jibbitz.</p>
                   </div>
                   <p className='mt-2 text-blue-500 text-lg tracking-wide'>
                       {"</p>"}
