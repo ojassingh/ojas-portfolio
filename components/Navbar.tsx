@@ -37,10 +37,10 @@ const Navbar = () => {
         
     ]
 
-    return(<div className="sticky top-0 bg-dark py-10 grid place-content-end">
+    return(<div className="lg:sticky bg-dark py-10 grid place-content-end md:ml-8">
        
         <nav className="text-darkgray">
-            <ul className="">
+            <ul className="md:flex-none lg:flex-wrap xs:hidden">
                 {/* <p className="px-2 font-medium ">{"<nav>"}</p> */}
                 {navItems.map((item, i)=>{
                     return(<motion.li  whileHover={{scale: 1.05}} className="font-medium px-2 text-right text-lg" key={i}>

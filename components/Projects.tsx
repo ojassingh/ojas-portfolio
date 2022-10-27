@@ -70,10 +70,10 @@ const Projects = () => {
     };
 
     return(
-      <div id='projects' className='mt-10'>
-          <h1 className='px-40 text-6xl text-white text-chalk font-bold'>≫ selected-works</h1>
-          <div id="general-projects" className="px-40 pt-10 pb-20">
-          <div id="featured-project" className="w-155">
+      <div id='projects' className='mt-10 xs:px-4'>
+          <h1 className='md:px-16 lg:px-40 text-6xl xs:text-3xl text-white text-chalk font-bold'>≫ selected-works</h1>
+          <div id="general-projects" className="lg:px-40 md:px-16 pt-10 pb-20">
+          <div id="featured-project" className="lg:w-155 md:w-128">
             <a href="https://www.youtube.com" target='_blank'>
               <motion.div initial="rest" whileHover="hover"
               variants={slashMotion} 
@@ -99,11 +99,12 @@ const Projects = () => {
             </a>
           </div>
 
-          <div id="other-project" className="flex flex-wrap mt-2 gap-2 w-155">
+          <div id="other-project" className="lg:flex lg:flex-wrap lg:mt-2 md:w-128 lg:w-155 lg:gap-2">
 
           {project_list.map((project, i)=>{
             return(
-              <a key={project.id} href={project.link} target='_blank' className="w-5000">
+              <div key={project.id} className="lg:w-5000 xs:mt-3 lg:mt-0 md:mt-3">
+                <a  href={project.link} target='_blank' className="">
               <motion.div initial="rest" whileHover="hover"
               variants={slashMotion} 
               id="featured" className="bg-extrablue/20 rounded-midxl">
@@ -125,6 +126,7 @@ const Projects = () => {
                 </motion.div>
               </motion.div>
             </a>
+              </div>
             )
           })}
           

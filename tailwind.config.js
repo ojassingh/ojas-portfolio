@@ -33,6 +33,7 @@ module.exports = {
       },
 
       spacing: {
+        '8000': '80%',
         '18': '4.5rem',
         'project': '100rem',
         '5000': '49.5%',
@@ -108,7 +109,13 @@ module.exports = {
         'full': '9999px',
         'large': '12px',
       },
-      
+      screens: {
+
+        'xs': {'max': '639'},
+
+        // ...defaultTheme.screens,
+      }, 
+
     },
   },
   plugins: [
