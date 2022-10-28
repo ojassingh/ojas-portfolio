@@ -53,7 +53,7 @@ const Intro = () => {
         </motion.div>
         <motion.div className='flex ml-3 m-10 lg:px-40 md:px-10'>
           <p className='flex-1 text-chalk lg:text-lg md:text-lg xs:text-md'>Let's connect. Here are my socials: </p>
-          <div className='flex-1'>
+          <div className='flex-1 lg:-ml-20'>
           <div className='flex lg:scale-175 md:scale-175 text-blue-500 lg:ml-10 md:ml-20'>
               <motion.a target="_blank" href='https://www.linkedin.com/in/ojas-singh/' whileHover={{translateY: -4}} className='mr-1'><UilLinkedin/></motion.a>
               <motion.a target="_blank" href='https://github.com/ojassingh/' whileHover={{translateY: -4}} className='mr-1'><UilGithub/></motion.a>
