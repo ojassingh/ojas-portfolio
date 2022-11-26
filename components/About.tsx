@@ -9,14 +9,14 @@ const About = () => {
           <div className="lg:flex pt-10 pb-20 lg:gap-10">
             <motion.div whileHover={{scale: 1.03, transition: {duration: 0.2}}} className="text-chalk lg:flex-1 lg:mx-0 md:w-128 lg:w-128  md:mx-10 text-lg rounded-midxl bg-black p-16 xs:p-8 leading-flow">
               <p>
-                I am a currently a full-time student at the <span className="text-blue-500">University of Toronto</span>, double majoring in <span className="text-blue-500">physics and statistics.</span> I started building web applications about a year ago, and I fell in love with learning how to build scaleable, data-intensive projects. Here's a glance at my tech-stack:
+                I am a currently a full-time student at the <span className="text-cyan-500">University of Toronto</span>, double majoring in <span className="text-cyan-500">physics and statistics.</span> I started building web applications about a year ago, and I fell in love with learning how to build scaleable, data-intensive projects. Here's a glance at my tech-stack:
               </p>
               <div className="flex pt-5">
                 <ul className="lg:flex-1">
-                  <li><span className="text-blue-500">≫ Languages: </span>Typescript, Javascript, Python, Go, HTML/CSS</li>
-                  <li><span className="text-blue-500">≫ Framworks/Libraries:</span> Next.js, React, Node.js, Express.js, TensorFlow </li>
-                  <li><span className="text-blue-500">≫ Databases: </span>MongoDB, MySQL, Postgresql, Redis</li>   
-                  <li><span className="text-blue-500">≫ Others: </span>Docker, Firebase, AWS</li>
+                  <li><span className="text-cyan-500">≫ Languages: </span>Typescript, Javascript, Python, Go, HTML/CSS</li>
+                  <li><span className="text-cyan-500">≫ Framworks/Libraries:</span> Next.js, React, Node.js, Express.js, TensorFlow </li>
+                  <li><span className="text-cyan-500">≫ Databases: </span>MongoDB, MySQL, Postgresql, Redis</li>   
+                  <li><span className="text-cyan-500">≫ Others: </span>Docker, Firebase, AWS</li>
                 </ul>
               </div>
             </motion.div>

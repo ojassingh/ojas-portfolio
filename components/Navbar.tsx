@@ -37,14 +37,14 @@ const Navbar = () => {
         
     ]
 
-    return(<div className="xs:hidden lg:sticky bg-dark py-10 grid place-content-end md:ml-8  ">
+    return(<div className="xs:hidden lg:sticky bg-dark py-10 grid place-content-end md:ml-8 ">
        
-        <nav className="text-darkgray">
-            <ul className="md:flex-none lg:flex-wrap">
+        <nav className="">
+            <ul className="md:flex-none lg:flex-wrap bg-gradient-to-r from-cyan-500 to-cyan-800 text-transparent bg-clip-text brightness-150">
                 {/* <p className="px-2 font-medium ">{"<nav>"}</p> */}
                 {navItems.map((item, i)=>{
-                    return(<motion.li  whileHover={{scale: 1.05}} className="font-medium px-2 text-right text-lg" key={i}>
-                            <motion.a href={item.link} className="px-5 py-3 text-projcomp scroll-smooth">{item.name}</motion.a>
+                    return(<motion.li  whileHover={{scale: 1.05}} className="font-medium px-2 text-right text-lg hover:text-white" key={i}>
+                            <motion.a href={item.link} className="px-5 py-3 hover:text-white">{item.name}</motion.a>
                     </motion.li>
                     )
                 })}

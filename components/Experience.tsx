@@ -8,7 +8,7 @@ const Experience = () => {
                     <div id='latest' className='px-20 xs:px-4 pt-10 pb-6 rounded-midxl bg-black mt-10 lg:w-145 md:w-128'>
                     <div id='border' className='xs:pl-2 description xs:border-0 border-l-2 -ml-3'>
                         <div className='px-2 '>
-                        <h3 className='text-blue-500 font-semibold text-2xl px-3'>Machine Learning Engineer @ Omdena</h3>
+                        <h3 className='text-cyan-500 font-semibold text-2xl px-3'>Machine Learning Engineer @ Omdena</h3>
                         <h4 className='px-4 text-projtext/80 py-2'>Sept 2020 - Dec 2020 • Part-time</h4>
                             <div id='description' className='px-10'>
                                 <ul className='list-disc chalk pt-4 leading-flow text-md'>
@@ -26,7 +26,7 @@ const Experience = () => {
                     <div id='2' className='px-20 xs:px-4  py-10 rounded-midxl bg-black mt-2 lg:w-145 md:w-128'>
                   <div id='border' className='xs:pl-2 description xs:border-0 border-l-2 -ml-3'>
                         <div className='px-2'>
-                        <h3 className='text-blue-500 font-semibold text-2xl px-3'>Data Science Intern @ MEIT</h3>
+                        <h3 className='text-cyan-500 font-semibold text-2xl px-3'>Data Science Intern @ MEIT</h3>
                         <h4 className='px-4 text-projtext/80'>Sept 2020 - Dec 2020 • Full-time </h4>
                         <div id='description' className='px-10'>
                                 <ul className='list-disc text-chalk pt-4 leading-flow text-md'>

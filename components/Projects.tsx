@@ -86,7 +86,7 @@ const Projects = () => {
                 </motion.div>
                 <motion.h1  
                 variants={textMotion} 
-                className="h-40 z-0 h-55 text-blue-700  font-semibold text-6xl grid text-center grid place-content-center">ACE U</motion.h1>
+                className="h-40 z-0 h-55 text-blue-600  font-semibold text-6xl grid text-center grid place-content-center">ACE U</motion.h1>
                 <div className="-mt-20 py-10 grid place-content-center text-center">
                   <p>Hello</p>
                 </div>
@@ -108,7 +108,7 @@ const Projects = () => {
               <motion.div initial="rest" whileHover="hover"
               variants={slashMotion} 
               id="featured" className="bg-extrablue/20 rounded-midxl">
-                <motion.div variants={slashMotion} className="z-20 px-20 pt-10 flex place-content-between font-semibold text-lg text-projtext">
+                <motion.div variants={slashMotion} className="z-20 px-20 pt-10 flex place-content-between font-semibold text-lg text-cyan-500">
                   <p className="">[0{i+2}]</p>
                   <Link href={project.link}><p className="scale-150"><UilGithub/></p></Link>
                 </motion.div>
@@ -117,10 +117,10 @@ const Projects = () => {
                 className="h-40 z-0 text-chalk font-semibold text-5xl grid text-center grid place-content-center">
                   {project.name}
                 </motion.h1>
-                <div className="-mt-4 pb-10 grid place-content-center text-projtext text-center">
+                <div className="-mt-4 pb-10 grid place-content-center text-cyan-500 text-center">
                   <p className="font-medium">{project.techStack}</p>
                 </div>
-                <motion.div variants={slashMotion} className="text-projtext z-20 px-20 pb-10 flex place-content-between text-lg">
+                <motion.div variants={slashMotion} className="text-cyan-500 z-20 px-20 pb-10 flex place-content-between text-lg">
                   <p className="">Launch Project</p>
                   <p className=""><UilArrowUpRight/></p>
                 </motion.div>
