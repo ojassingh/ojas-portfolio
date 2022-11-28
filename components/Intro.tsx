@@ -1,6 +1,6 @@
 import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
-import { UilLinkedin, UilGithub, UilEnvelopeAlt, UilFileInfoAlt} from '@iconscout/react-unicons'
+import { UilLinkedin, UilGithub, UilEnvelopeAlt} from '@iconscout/react-unicons'
 import ResumeIcon from './iconConfig/Resume';
 
 
@@ -8,7 +8,7 @@ const Intro = () => {
     return(
       <div id='home' className='h-screen py-20 lg:mt-20 md:mt-20 xs:mt-0 xs:px-4 xs:w-screen'>
         <div className=''>
-          <motion.div whileHover={{translateY: -5}}  className='lg:px-40 md:px-10  lg:flex bg-gradient-to-r from-cyan-500 to-pink-600 text-transparent bg-clip-text brightness-150'>
+          <motion.div whileHover={{translateY: -5}}  className='lg:px-40 md:px-10  lg:flex bg-gradient-to-r from-cyan-600 to-pink-700 text-transparent bg-clip-text brightness-200'>
           <motion.h1 className='lg:text-7xl md:text-6xl xs:text-5xl font-bold mr-4 py-2'>{"ojassingh≫ "}</motion.h1>
           <h1 className='lg:text-7xl xs:text-5xl md:text-6xl font-bold py-2'><Typewriter
               onInit={(typewriter) => {
@@ -46,7 +46,7 @@ const Intro = () => {
                       {"<p>"}
                   </p>  
                   <div className='lg:w-128 md:w-128 xs:w-full border-l-2 border-gray-500/50 ml-4'>
-                    <p className='lg:text-lg md:text-md xs:text-md ml-2 leading-flow'>My name is Ojas Singh, and I am a full-stack developer and student based in Toronto. I have a vested interest in deep learning, cooking and playing tennis. Fun fact: I make amazing butter chicken and I own a pair of Crocs with Lightning McQueen jibbitz.</p>
+                    <p className='lg:text-lg md:text-md xs:text-md ml-2 leading-flow bg-gradient-to-r from-cyan-500 to-pink-600 text-transparent bg-clip-text brightness-150'>My name is Ojas Singh, and I am a full-stack developer and student based in Toronto. I have a vested interest in deep learning, cooking and playing tennis. Fun fact: I make amazing butter chicken and I own a pair of Crocs with Lightning McQueen jibbitz.</p>
                   </div>
                   <p className='mt-2 text-cyan-500 lg:text-lg md:text-md xs:text-md tracking-wide'>
                       {"</p>"}
