@@ -97,7 +97,7 @@ const Projects = () => {
                 <motion.h1  
                 variants={textMotion} 
                 className="h-40 z-0 h-55 text-blue-600  font-semibold text-6xl grid text-center grid place-content-center">{featured.name}</motion.h1>
-                <div className="-mt-20 py-10 grid place-content-center text-center gap-2">
+                <div className="-mt-20 py-10 grid place-content-center text-center gap-2 px-10">
                   <p className="font-medium">{featured.techStack}</p>
                   <p>{featured.description}</p>
                   
