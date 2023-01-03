@@ -8,7 +8,7 @@ const Intro = () => {
     return(
       <div id='home' className='h-screen py-20 lg:mt-20 md:mt-20 xs:mt-0 xs:px-4 xs:w-screen'>
         <div className=''>
-          <motion.div whileHover={{translateY: -5}}  className='lg:px-40 md:px-10  lg:flex bg-gradient-to-r from-cyan-600 to-pink-700 text-transparent bg-clip-text brightness-200'>
+          <motion.div whileHover={{translateY: -5}}  className='lg:px-40 md:px-10  lg:flex bg-gradient-to-r from-cyan-600 to-pink-700 text-transparent bg-clip-text brightness-175'>
           <motion.h1 className='lg:text-7xl md:text-6xl xs:text-5xl font-bold mr-4 py-2'>{"ojassingh≫ "}</motion.h1>
           <h1 className='lg:text-7xl xs:text-5xl md:text-6xl font-bold py-2'><Typewriter
               onInit={(typewriter) => {
@@ -27,7 +27,7 @@ const Intro = () => {
                   .typeString("batman?")
                   .pauseFor(1000)
                   .deleteAll(50)
-                  .typeString("Namaste :)")
+                  .typeString("namaste :)")
                   .start();
               }}
           /></h1>

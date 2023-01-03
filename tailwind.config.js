@@ -115,6 +115,10 @@ module.exports = {
 
         // ...defaultTheme.screens,
       }, 
+      brightness: {
+        25: '.25',
+        175: '1.75',
+      }
 
     },
   },

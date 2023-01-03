@@ -4,7 +4,7 @@ import About from '../components/About';
 import Projects from '../components/Projects';
 import Intro from '../components/Intro';
 import Navigation from '../components/Navigation';
-import Experience from '../components/Experience';
+import Experience from '../components/Experience/Experience';
 import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
