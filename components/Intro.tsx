@@ -62,7 +62,7 @@ const Intro = () => {
               <motion.a target="_blank" href='https://www.linkedin.com/in/ojas-singh/' whileHover={{translateY: -4}} className='mr-1'><UilLinkedin/></motion.a>
               <motion.a target="_blank" href='https://github.com/ojassingh/' whileHover={{translateY: -4}} className='mr-1'><UilGithub/></motion.a>
               <motion.a target="_blank" href='mailto:ojas.singh02@gmail.com' whileHover={{translateY: -4}} className='mr-1'><UilEnvelopeAlt/></motion.a>
-              <motion.a title='Check out my resume' target="_blank" href='gdrive_resume' whileHover={{translateY: -4}} className='mr-1'><ResumeIcon/>
+              <motion.a title='Check out my resume' target="_blank" href='https://drive.google.com/file/d/1zUABabvTjbFZHnFnBX3DbfQ6RwowaLZ4/view?usp=share_link' whileHover={{translateY: -4}} className='mr-1'><ResumeIcon/>
             </motion.a>
           </div>
           </div>
