@@ -24,8 +24,8 @@ const Navbar = () => {
             link: '#projects'
         },
         {
-            name: '≫ resume/cv',
-            link: '#resume'
+            name: '≫ my resume',
+            link: 'https://drive.google.com/file/d/1zUABabvTjbFZHnFnBX3DbfQ6RwowaLZ4/view?usp=share_link'
         },
 
 
