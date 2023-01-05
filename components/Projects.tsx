@@ -22,7 +22,7 @@ const Projects = () => {
 
     let featured: Project = {
       id: 1,
-      name: "Trading Dashboard",
+      name: "Twitter Dashboard",
       link: "#",
       github: "#",
       description: "Seamless trading dashboard with real-time stock tips, news and subscriptions",
@@ -91,7 +91,7 @@ const Projects = () => {
                 <div>
                 <motion.div variants={slashMotion} className="text-blue-700 z-20 px-20 pt-10 flex place-content-between font-semibold text-lg">
                   <p  className="">[01]</p>
-                  <Link href={featured.link}><p className="scale-150"><UilGithub/></p></Link>
+                  <Link href={featured.github}><p className="scale-150"><UilGithub/></p></Link>
                   <p className="">Featured</p>
                 </motion.div>
                 <motion.h1  
@@ -122,7 +122,7 @@ const Projects = () => {
               id="featured" className="bg-extrablue/20 rounded-midxl">
                 <motion.div variants={slashMotion} className="z-20 px-20 pt-10 flex place-content-between font-semibold text-lg text-cyan-500">
                   <p className="">[0{i+2}]</p>
-                  <Link href={project.link}><p className="scale-150"><UilGithub/></p></Link>
+                  <Link href={project.github}><p className="scale-150"><UilGithub/></p></Link>
                 </motion.div>
                 <motion.h1  
                 variants={textMotion} 
