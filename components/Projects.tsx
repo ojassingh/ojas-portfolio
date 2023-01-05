@@ -41,7 +41,7 @@ const Projects = () => {
       {
         id: 3, 
         name: "Cloud Journal",  
-        link: '#',
+        link:"#",
         github: "https://github.com/ojassingh/cloudblog",
         description: 'A personal journal on the cloud, built with AWS Amplify',
         techStack: 'Typescript, Next.js, GraphQL, DynamoDB, AWS'          
@@ -49,7 +49,7 @@ const Projects = () => {
       {
         id: 4, 
         name: "Astro News",  
-        link: '#',
+        link: 'https://astronews-ojassingh.vercel.app/',
         github: "https://github.com/ojassingh/astronews",
         description: 'A space-launch info and space-news integrated web-application ',
         techStack: 'Typescript, Next.js, Tailwind, Docker, Vercel, NewsAPI.org'     
@@ -111,15 +111,24 @@ const Projects = () => {
             </a>
           </div>
 
-          <div id="other-project" className="lg:flex lg:flex-wrap lg:mt-2 md:w-128 lg:w-155 lg:gap-2">
+          <div id="other-project" className="lg:flex h-full lg:flex-wrap lg:mt-2 md:w-128 lg:w-155 lg:gap-2">
 
           {project_list.map((project, i)=>{
+
+            let link = project.link;
+            let canLaunch = true;
+
+            if(project.link == "#"){
+              link = project.github
+              canLaunch = false;
+            }
+
             return(
               <div key={project.id} className="lg:w-5000 xs:mt-3 lg:mt-0 md:mt-3">
-                <a  href={project.link} target='_blank' className="">
+                <a  href={link} target='_blank' className="">
               <motion.div initial="rest" whileHover="hover"
               variants={slashMotion} 
-              id="featured" className="bg-extrablue/20 rounded-midxl">
+              id="featured" className="bg-extrablue/20 rounded-midxl h-full">
                 <motion.div variants={slashMotion} className="z-20 px-20 pt-10 flex place-content-between font-semibold text-lg text-cyan-500">
                   <p className="">[0{i+2}]</p>
                   <Link href={project.github}><p className="scale-150"><UilGithub/></p></Link>
@@ -133,10 +142,17 @@ const Projects = () => {
                   <p className="font-medium">{project.techStack}</p>
                   <p className="text-chalk">{project.description}</p>
                 </div>
-                <motion.div variants={slashMotion} className="text-cyan-500 z-20 px-20 pb-10 flex place-content-between text-lg">
+
+                {canLaunch && <motion.div variants={slashMotion} className="text-cyan-500 z-20 px-20 pb-10 flex place-content-between text-lg">
                   <p className="">Launch Project</p>
                   <p className=""><UilArrowUpRight/></p>
-                </motion.div>
+                </motion.div>}
+
+                {!canLaunch && <motion.div variants={slashMotion} className="text-cyan-500 z-20 px-20 pb-10 flex place-content-between text-lg">
+                  <p className="">Check on GitHub</p>
+                  <p className=""><UilArrowUpRight/></p>
+                </motion.div>}
+
               </motion.div>
             </a>
               </div>
