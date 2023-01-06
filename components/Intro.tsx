@@ -67,6 +67,7 @@ const Intro = () => {
           </div>
           </div>
         </motion.div>
+        
       </div>
     )
 }

@@ -14,7 +14,7 @@ const About = () => {
               <div className="flex pt-5">
                 <ul className="lg:flex-1">
                   <li><span className="text-cyan-500">≫ Languages: </span>Typescript, Javascript, Python, Go, HTML/CSS, R, Java</li>
-                  <li><span className="text-cyan-500">≫ Framworks/Libraries:</span> Next.js, React, Node.js, Express.js, TensorFlow </li>
+                  <li><span className="text-cyan-500">≫ Frameworks/Libraries:</span> Next.js, React, Node.js, Express.js, TensorFlow </li>
                   <li><span className="text-cyan-500">≫ Databases: </span>MongoDB, MySQL, PostgreSQL, Redis, DynamoDB</li>   
                   <li><span className="text-cyan-500">≫ Others: </span>Docker, Firebase, AWS, etc.</li>
                 </ul>
