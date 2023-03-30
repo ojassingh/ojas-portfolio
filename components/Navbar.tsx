@@ -16,7 +16,7 @@ const Navbar = () => {
             link: '#about'
         },
         {
-            name: '≫ work-xp',
+            name: '≫ work-exp',
             link: '#work'
         },
         {
@@ -37,19 +37,20 @@ const Navbar = () => {
         
     ]
 
-    return(<div className="xs:hidden lg:sticky bg-dark py-10 grid place-content-end md:ml-8 ">
+    return(<div className="py-10 grid place-content-center">
        
         <nav className="">
-            <ul className="md:flex-none lg:flex-wrap text-cyan-600 brightness-150">
+            <ul className="flex gap-6 text-cyan-600 brightness-150">
                 {/* <p className="px-2 font-medium ">{"<nav>"}</p> */}
                 {navItems.map((item, i)=>{
-                    return(<motion.li  whileHover={{scale: 1.05}} className="font-medium px-2 text-right text-lg hover:text-white" key={i}>
-                            <motion.a href={item.link} className="px-5 py-3 hover:text-white">{item.name}</motion.a>
+                    return(<motion.li  whileHover={{scale: 1.05}} className="font-medium text-center text-lg hover:text-white" key={i}>
+                            <motion.a href={item.link} className="py-3 hover:text-white">{item.name}</motion.a>
                     </motion.li>
                     )
                 })}
                 {/* <p className="px-2 font-medium ">{"</nav>"}</p> */}
             </ul>
+            <h1 className="text-cyan-600 brightness-150 text-center text-xs">(navbars are overrated)</h1>
         </nav>
     </div>)
 }
