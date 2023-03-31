@@ -30,7 +30,7 @@ const Intro = () => {
       id="home"
       className="py-20 px-20 grid place-content-center"
     >
-      <div
+      <motion.div
         style={{
           transform: isInView ? "none" : "translateY(+200px)",
           opacity: isInView ? 1 : 0,
@@ -140,7 +140,7 @@ const Intro = () => {
               </motion.a>
         </div>
 
-      </div>
+      </motion.div>
     </div>
   );
 };
