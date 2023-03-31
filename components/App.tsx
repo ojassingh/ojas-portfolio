@@ -20,19 +20,7 @@ export default function App() {
         animate={{ opacity: 1 }}
         transition={{ duration: 2.5 }} className="text-8xl font-bold bg-gradient-to-r from-rose-600 to-cyan-900 text-transparent bg-clip-text brightness-200 text-center leading-normal">
          
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .changeDelay(200)
-                .typeString("Hi, traveller.")
-                .pauseFor(1000)
-                .deleteAll(50)
-                .typeString("I'm Ojas!")
-                .pauseFor(1000)
-                .deleteAll(50)
-                .typeString("Welcome.")
-                .start();
-            }}/>
+         Ojas Singh
             
         </motion.h1>
 
@@ -53,6 +41,7 @@ export default function App() {
         justifyContent: "center",
         alignItems: "center",
       }}
+      className="h-screen"
     >
       <div className="h-screen w-screen relative">
         <div className="h-screen w-screen">

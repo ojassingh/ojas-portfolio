@@ -18,11 +18,10 @@ const Home: NextPage = () => {
     <div className="overflow-x-clip h-screen scrollbar-thin scrollbar scrollbar-thumb-cyan-400 scrollbar-rounded-full">
       <div className="bg-black">
         <div className="">
-          {/* <Navbar/> */}
+          <div className="h-screen">
           <App />
-
+          </div>
           <Intro />
-          {/* <About /> */}
           <Experience />
           <Projects />
         </div>
