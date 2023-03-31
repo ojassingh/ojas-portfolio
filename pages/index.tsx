@@ -6,7 +6,7 @@ import Intro from "../components/Intro";
 import Navigation from "../components/Navigation";
 import Experience from "../components/Experience/Experience";
 import Footer from "../components/Footer";
-import App from "../components/Design";
+import App from "../components/App";
 import { motion } from "framer-motion";
 
 
@@ -16,13 +16,13 @@ const Home: NextPage = () => {
 
   return (
     <div className="overflow-x-clip h-screen scrollbar-thin scrollbar scrollbar-thumb-cyan-400 scrollbar-rounded-full">
-      <div className="bg-dark lg:flex md:flex-wrap">
+      <div className="bg-black">
         <div className="">
           {/* <Navbar/> */}
           <App />
 
           <Intro />
-          <About />
+          {/* <About /> */}
           <Experience />
           <Projects />
         </div>

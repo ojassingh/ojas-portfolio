@@ -8,6 +8,8 @@ import {
 import ResumeIcon from "./iconConfig/Resume";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import Image from "next/image";
+import ojas from '../public/ojas2.jpg'
 
 const Intro = () => {
   const sectionRef = useRef<HTMLOptionElement>(null);
@@ -26,7 +28,7 @@ const Intro = () => {
     <div
       ref={ref}
       id="home"
-      className="h-screen py-20 lg:mt-20 md:mt-20 xs:mt-0 xs:px-4 xs:w-screen"
+      className="py-20 px-20 grid place-content-center"
     >
       <div
         style={{
@@ -38,84 +40,76 @@ const Intro = () => {
         <div className="">
           <motion.div
             whileHover={{ translateY: -5 }}
-            className="lg:px-40 md:px-10  lg:flex bg-gradient-to-r from-cyan-600 to-pink-700 text-transparent bg-clip-text brightness-175"
+            className="bg-gradient-to-r from-cyan-600 to-pink-700 text-transparent bg-clip-text brightness-175"
           >
-            <motion.h1 className="lg:text-7xl md:text-6xl xs:text-5xl font-bold mr-4 py-2">
-              {"ojassingh≫ "}
+            <motion.h1 className="text-7xl font-bold mr-4 py-2">
+              {"≫ About me"}
             </motion.h1>
-            <h1 className="lg:text-7xl xs:text-5xl md:text-6xl font-bold py-2">
-              <Typewriter
-                onInit={(typewriter) => {
-                  typewriter
-                    .changeDelay(50)
-                    .typeString("hi, I'm Ojas!")
-                    .pauseFor(1000)
-                    .deleteAll(50)
-                    .typeString("a student?")
-                    .pauseFor(1000)
-                    .deleteAll(50)
-                    .typeString("full-stack dev?")
-                    .pauseFor(1000)
-                    .deleteAll(50)
-                    .typeString("batman?")
-                    .pauseFor(1000)
-                    .deleteAll(50)
-                    .typeString("namaste :)")
-                    .start();
-                }}
-              />
-            </h1>
           </motion.div>
         </div>
+        <div className="flex gap-4">
         <motion.div
           whileHover={{ translateY: -7 }}
-          className="ml-3 xs:ml-0 mt-10 lg:px-40 md:px-10"
+          className="px-10 py-10"
         >
-          <p className="mt-3 text-lg xs:text-md text-cyan-500 tracking-wide">
+          <p className="mt-3 text-lg text-cyan-500 tracking-wide">
             {"<div id='super-cool-description' >"}
           </p>
           <div className="mt-3 ml-6 border-l-2 border-gray-500/50">
-            <h3 className="ml-4 mt-2 lg:text-lg md:text-md xs:text-md text-cyan-500 tracking-wide">
+            <h3 className="ml-4 mt-2 text-lg text-cyan-500 tracking-wide">
               {/* {"<h3>"} <span className='text-2xl font-medium '>I love building impactful web applications.</span> {"</h3>"} */}
               {"<h3>"}{" "}
-              <span className="text-chalk text-2xl md:text-xl xs:text-md font-normal ">
+              <span className="text-chalk text-2xl font-normal ">
                 your friendly neighbourhood full-stack developer.
               </span>{" "}
               {"</h3>"}
             </h3>
 
             <div id="description" className="text-chalk  ml-4">
-              <p className="lg:text-lg md:text-md xs:text-md text-cyan-500 tracking-wide">
+              <p className="text-lg text-cyan-500 tracking-wide">
                 {"<p>"}
               </p>
-              <div className="lg:w-128 md:w-128 xs:w-full border-l-2 border-gray-500/50 ml-4">
-                <p className="lg:text-lg md:text-md xs:text-md ml-2 leading-flow bg-gradient-to-r from-cyan-500 to-pink-600 text-transparent bg-clip-text brightness-150">
-                  My name is Ojas Singh, and I am a full-stack developer and
-                  student based in Toronto. I have a vested interest in deep
-                  learning, cooking and playing tennis. Hope you like this
-                  portfolio!
+              <div className="w-128 border-l-2 border-gray-500/50 ml-4">
+                <p className="text-lg ml-2 leading-flow  brightness-150">
+                I am a currently a full-time student at the <span className="text-cyan-500">University of Toronto</span>, double majoring in <span className="text-cyan-500">physics and statistics.</span> I started building web applications about a year ago, and I fell in love with learning how to build scaleable, data-intensive projects.
                 </p>
               </div>
-              <p className="mt-2 text-cyan-500 lg:text-lg md:text-md xs:text-md tracking-wide">
+              <p className="mt-2 text-cyan-500 text-lg tracking-wide">
+                {"</p>"}
+              </p>
+            </div>
+            <div id="description" className="text-chalk  ml-4">
+              <p className="text-lg text-cyan-500 tracking-wide">
+                {"<p>"}
+              </p>
+              <div className="w-128 border-l-2 border-gray-500/50 ml-4">
+                <p className="text-lg ml-2 leading-flow  brightness-150">
+                I'm always learning something new, and I'm currently experimenting with using large-language models. I primarily use <span className="text-cyan-500">Typescript</span> for my full-stack projects, and have lately also been using <span className="text-cyan-500">Go and Python</span>. Check out my resume and projects to learn more about my work.
+                </p>
+              </div>
+              <p className="mt-2 text-cyan-500 text-lg tracking-wide">
                 {"</p>"}
               </p>
             </div>
           </div>
-          <p className="mt-2 lg:text-lg md:text-md xs:text-md text-cyan-500 tracking-wide">
+          <p className="mt-2 text-lg text-cyan-500 tracking-wide">
             {"</div>"}
           </p>
         </motion.div>
-        <motion.div className="flex ml-3 m-10 lg:px-40 md:px-10">
-          <p className="flex-1 text-chalk lg:text-lg md:text-lg xs:text-md">
-            Let's connect. Here are my socials:{" "}
-          </p>
-          <div className="flex-1 lg:-ml-20">
-            <div className="flex lg:scale-175 md:scale-175 text-cyan-500 lg:ml-10 md:ml-20">
-              <motion.a
+        <motion.div whileHover={{scale: 1.03, transition: {duration: 0.2}}}
+              className="md:ml-40 lg:ml-0 lg:block md:hidden xs:hidden"
+            >
+              <Image height='500px' width='375px' className="lg:flex-1 rounded-midxl" src={ojas}/>
+              <p className="md:hidden text-center text-projcomp">{"<img src='super-handsome-guy.png'>"}</p>
+          </motion.div>
+        </div>
+
+        <div className="text-cyan-500 flex gap-10 px-10 place-content-center">
+        <motion.a
                 target="_blank"
                 href="https://www.linkedin.com/in/ojas-singh/"
                 whileHover={{ translateY: -4 }}
-                className="mr-1"
+                className="scale-175"
               >
                 <UilLinkedin />
               </motion.a>
@@ -123,7 +117,7 @@ const Intro = () => {
                 target="_blank"
                 href="https://github.com/ojassingh/"
                 whileHover={{ translateY: -4 }}
-                className="mr-1"
+                className="scale-175"
               >
                 <UilGithub />
               </motion.a>
@@ -131,7 +125,7 @@ const Intro = () => {
                 target="_blank"
                 href="mailto:ojas.singh02@gmail.com"
                 whileHover={{ translateY: -4 }}
-                className="mr-1"
+                className="scale-175"
               >
                 <UilEnvelopeAlt />
               </motion.a>
@@ -140,13 +134,12 @@ const Intro = () => {
                 target="_blank"
                 href="https://drive.google.com/file/d/1zUABabvTjbFZHnFnBX3DbfQ6RwowaLZ4/view?usp=share_link"
                 whileHover={{ translateY: -4 }}
-                className="mr-1"
+                className="scale-175"
               >
                 <ResumeIcon />
               </motion.a>
-            </div>
-          </div>
-        </motion.div>
+        </div>
+
       </div>
     </div>
   );

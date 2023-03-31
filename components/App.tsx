@@ -1,21 +1,30 @@
 import { useState, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, OrbitControls } from "@react-three/drei";
-// import * as random from 'maath/random/dist/maath-random.esm';
+import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "./Navbar";
 import Typewriter from "typewriter-effect";
 
 export default function App() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleOnLoad = () => {
+    setIsVisible(true);
+  };
+
   const Overlay = () => {
     return (
       <div>
-        <h1 className="text-7xl font-bold bg-gradient-to-r from-rose-600 to-blue-800 text-transparent bg-clip-text brightness-175 text-center leading-normal">
-          {/* Ojas Singh */}
+        <motion.h1 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2.5 }} className="text-8xl font-bold bg-gradient-to-r from-rose-600 to-cyan-900 text-transparent bg-clip-text brightness-200 text-center leading-normal">
+         
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-                .changeDelay(50)
-                .typeString("Hello, traveller.")
+                .changeDelay(200)
+                .typeString("Hi, traveller.")
                 .pauseFor(1000)
                 .deleteAll(50)
                 .typeString("I'm Ojas!")
@@ -23,9 +32,9 @@ export default function App() {
                 .deleteAll(50)
                 .typeString("Welcome.")
                 .start();
-            }}
-          />
-        </h1>
+            }}/>
+            
+        </motion.h1>
 
         <Navbar />
       </div>
@@ -33,17 +42,30 @@ export default function App() {
   };
 
   return (
-    <div className="h-screen w-screen relative">
-      <div className="h-screen w-screen">
-        <Canvas camera={{ position: [0, 0, 1] }}>
-          {/* <OrbitControls/> */}
-          <Stars />
-        </Canvas>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      style={{
+        background: "black",
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <div className="h-screen w-screen relative">
+        <div className="h-screen w-screen">
+          <Canvas camera={{ position: [0, 0, 1] }}>
+            {/* <OrbitControls/> */}
+            <Stars />
+          </Canvas>
+        </div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <Overlay />
+        </div>
       </div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <Overlay />
-      </div>
-    </div>
+    </motion.div>
   );
 }
 
