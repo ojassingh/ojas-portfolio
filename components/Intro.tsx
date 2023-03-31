@@ -31,7 +31,7 @@ const Intro = () => {
         <div className="">
           <motion.div
             whileHover={{ translateY: -5 }}
-            className="bg-gradient-to-r from-cyan-600 to-pink-700 text-transparent bg-clip-text brightness-175"
+            className="bg-gradient-to-r from-cyan-600 to-blue-900 text-transparent bg-clip-text brightness-175"
           >
             <motion.h1 className="text-7xl font-bold mr-4 py-2">
               {"≫ About me"}
@@ -41,7 +41,7 @@ const Intro = () => {
         <div className="flex gap-4">
         <motion.div
           whileHover={{ translateY: -7 }}
-          className="px-10 py-10"
+          className="px-10 pt-5"
         >
           <p className="mt-3 text-lg text-cyan-500 tracking-wide">
             {"<div id='super-cool-description' >"}
@@ -88,9 +88,9 @@ const Intro = () => {
           </p>
         </motion.div>
         <motion.div whileHover={{scale: 1.03, transition: {duration: 0.2}}}
-              className="md:ml-40 lg:ml-0 lg:block md:hidden xs:hidden"
+              className=""
             >
-              <Image height='500px' width='375px' className="lg:flex-1 rounded-midxl" src={ojas}/>
+              <Image alt="ojas singh" height='450px' width='325px' className="rounded-midxl" src={ojas}/>
               <p className="md:hidden text-center text-projcomp">{"<img src='super-handsome-guy.png'>"}</p>
           </motion.div>
         </div>
@@ -99,36 +99,36 @@ const Intro = () => {
         <motion.a
                 target="_blank"
                 href="https://www.linkedin.com/in/ojas-singh/"
-                whileHover={{ translateY: -4 }}
-                className="scale-175"
+                whileHover={{ translateY: -4, scale:1.25, transition: {duration: 0.2} }}
+                className=""
               >
-                <UilLinkedin />
+                <UilLinkedin size="45" />
               </motion.a>
               <motion.a
                 target="_blank"
                 href="https://github.com/ojassingh/"
-                whileHover={{ translateY: -4 }}
-                className="scale-175"
+                whileHover={{ translateY: -4, scale:1.25, transition: {duration: 0.2} }}
+                className=""
               >
-                <UilGithub />
+                <UilGithub size="45" />
               </motion.a>
               <motion.a
                 target="_blank"
                 href="mailto:ojas.singh02@gmail.com"
-                whileHover={{ translateY: -4 }}
-                className="scale-175"
+                whileHover={{ translateY: -4, scale:1.25, transition: {duration: 0.2} }}
+                className=""
               >
-                <UilEnvelopeAlt />
+                <UilEnvelopeAlt size="45" />
               </motion.a>
-              <motion.a
+              {/* <motion.a
                 title="Check out my resume"
                 target="_blank"
                 href="https://drive.google.com/file/d/1zUABabvTjbFZHnFnBX3DbfQ6RwowaLZ4/view?usp=share_link"
-                whileHover={{ translateY: -4 }}
-                className="scale-175"
+                whileHover={{ translateY: -4, scale:1.5 }}
+                className=""
               >
-                <ResumeIcon />
-              </motion.a>
+                <ResumeIcon/>
+              </motion.a> */}
         </div>
 
       </motion.div>

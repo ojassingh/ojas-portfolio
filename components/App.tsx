@@ -18,7 +18,7 @@ export default function App() {
         <motion.h1 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 2.5 }} className="text-8xl font-bold bg-gradient-to-r from-rose-600 to-cyan-900 text-transparent bg-clip-text brightness-200 text-center leading-normal">
+        transition={{ duration: 2.5 }} className="text-9xl font-bold bg-gradient-to-r from-indigo-800 to-sky-600 text-transparent bg-clip-text brightness-200 text-center leading-normal">
          
          Ojas Singh
             

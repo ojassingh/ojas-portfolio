@@ -58,7 +58,6 @@ module.exports = {
         'primary': '#AEB9F2',
         'darkgray': '#3E3E40',
         'green': '#09A603',
-        'red': '#F20505',
         'orange': '#F26444',
         'dark': '#0D0D0D',
         'pinkish': '#D93B92',

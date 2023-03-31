@@ -9,22 +9,14 @@ import Footer from "../components/Footer";
 import App from "../components/App";
 import { motion } from "framer-motion";
 
-
 const Home: NextPage = () => {
-
-
-
   return (
     <div className="overflow-x-clip h-screen scrollbar-thin scrollbar scrollbar-thumb-cyan-400 scrollbar-rounded-full">
       <div className="bg-black">
-        <div className="">
-          <div className="h-screen">
-          <App />
-          </div>
-          <Intro />
-          <Experience />
-          <Projects />
-        </div>
+        <App />
+        <Intro />
+        <Experience />
+        <Projects />
       </div>
       <Footer />
     </div>
