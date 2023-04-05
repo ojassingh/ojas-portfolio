@@ -17,19 +17,36 @@ const Projects = () => {
     link: string,
     github: string,
     description: string,
-    techStack: string
+    techStack: string,
+    note?: string
   }
 
     let featured: Project = {
       id: 1,
-      name: "Twitter Dashboard",
-      link: "#",
-      github: "#",
-      description: "Seamless trading dashboard with real-time stock tips, news and subscriptions",
-      techStack: "Gatsby, Typescript, MongoDB, Redis, Express.js, AWS, Docker"
+      name: "Sentiment Analysis Bot",
+      link: "https://github.com/ojassingh/sentyblog",
+      github: "https://github.com/ojassingh/sentyblog",
+      description: "An app that recognises text sentiment, powered by Tensorflow.js ",
+      techStack: "Typescript, Next.js, AWS Amplify, GraphQL, TensorFlow.js"
     }
 
     let project_list: Project[] = [
+      {
+        id: 6, 
+        name: "Go Real-Time Chat App",  
+        link: '#',
+        github: "https://github.com/ojassingh/go-chat-app",
+        description: 'A seamless real-time chat web application made with webhooks',
+        techStack: 'Typescript, React, Pusher, Go, Gin'    
+      },
+      {
+        id: 5, 
+        name: "Simple Polling App",  
+        link: '#',
+        github: "https://github.com/ojassingh/polling-app",
+        description: 'A polling/voting app inspired by rallly.co',
+        techStack: 'Typescript, Next.js, Nest.js, PostgreSQL, CockroachDB'    
+      },
       {
         id: 2, 
         name: "CRBN: RBC Innovation Challenge",  
@@ -81,7 +98,7 @@ const Projects = () => {
 
     return(
       <div id='projects' className='p-20'>
-          <h1 className='bg-gradient-to-r from-cyan-600 to-blue-900 text-transparent bg-clip-text brightness-175 font-bold text-6xl px-20'>≫ Selected-works</h1>
+          <h1 className='bg-gradient-to-r from-cyan-600 to-blue-900 text-transparent bg-clip-text brightness-175 font-bold text-6xl px-20'>≫ selected-works</h1>
           <div id="general-projects" className="grid place-content-center py-10">
           <div id="featured-project" className="lg:w-155 md:w-128">
             <a href={featured.link} target='_blank'>
@@ -103,7 +120,7 @@ const Projects = () => {
                   
                 </div>
                 <motion.div variants={slashMotion} className="text-blue-700  z-20 px-20 pb-10 flex place-content-between font-semibold text-lg">
-                  <p className="">Launch Project</p>
+                  <p className="">Check on GitHub</p>
                   <p className=""><UilArrowUpRight/></p>
                 </motion.div>
                 </div>
@@ -124,7 +141,7 @@ const Projects = () => {
             }
 
             return(
-              <div key={project.id} className="lg:w-5000 xs:mt-3 lg:mt-0 md:mt-3">
+              <div key={i} className="lg:w-5000 xs:mt-3 lg:mt-0 md:mt-3">
                 <a  href={link} target='_blank' className="">
               <motion.div initial="rest" whileHover="hover"
               variants={slashMotion} 

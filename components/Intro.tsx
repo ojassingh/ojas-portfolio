@@ -34,7 +34,7 @@ const Intro = () => {
             className="bg-gradient-to-r from-cyan-600 to-blue-900 text-transparent bg-clip-text brightness-175"
           >
             <motion.h1 className="text-7xl font-bold mr-4 py-2">
-              {"≫ About me"}
+              {"≫ about me"}
             </motion.h1>
           </motion.div>
         </div>

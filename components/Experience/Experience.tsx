@@ -3,7 +3,7 @@ const Experience = () => {
   return (
     <div id="work" className="text-chalk pb-10 md:px-16 lg:px-40 xs:px-4">
       <h1 className=" bg-gradient-to-r from-cyan-600 to-blue-900 text-transparent bg-clip-text brightness-175 font-bold text-6xl">
-        ≫ Work-experience
+        ≫ work-experience
       </h1>
       <div className="md:px-3">
         <div id="timeline" className="text-chalk grid gap-4">

@@ -21,10 +21,9 @@ const About = () => {
               </div>
             </motion.div>
             <motion.div whileHover={{scale: 1.03, transition: {duration: 0.2}}}
-              className="md:ml-40 lg:ml-0 lg:block md:hidden xs:hidden"
+              className=""
             >
-              <Image height='500px' width='375px' className="lg:flex-1 rounded-midxl" src={ojas}/>
-              <p className="md:hidden text-center text-projcomp">{"<img src='super-handsome-guy.png'>"}</p>
+              <Image height='500px' width='375px' className="flex-1 rounded-midxl" src={ojas}/>
             </motion.div>
           </div>
       </div>
