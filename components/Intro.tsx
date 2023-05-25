@@ -11,6 +11,9 @@ import { useInView } from "framer-motion";
 import Image from "next/image";
 import ojas from '../public/ojas2.jpg'
 
+
+
+
 const Intro = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });

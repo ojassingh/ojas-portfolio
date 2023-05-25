@@ -25,7 +25,7 @@ const Navbar = () => {
         },
         {
             name: '≫ my resume',
-            link: 'https://drive.google.com/file/d/1zUABabvTjbFZHnFnBX3DbfQ6RwowaLZ4/view?usp=share_link'
+            link: 'https://drive.google.com/file/d/1MrYvjcWwpSkWKQgB75qmeEzCmfNQxJWz/view?usp=sharing'
         },
 
 
