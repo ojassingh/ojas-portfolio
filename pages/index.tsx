@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Navbar from "../components/Navbar/Navbar";
-import Projects from "../components/Projects";
+import Projects from "../components/Projects/Projects";
 import Intro from "../components/Intro";
 import Experience from "../components/Experience/Experience";
 import Footer from "../components/Footer";
