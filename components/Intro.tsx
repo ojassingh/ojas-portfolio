@@ -18,7 +18,7 @@ const Intro = () => {
         }}
       >
         <motion.div whileHover={{ translateY: -5 }} className="text-[#152617]">
-          <motion.h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-bold">
+          <motion.h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-bold md:px-10 lg:px-10 md:pb-8 lg:pb-8">
             {"Hi there!"}
           </motion.h1>
         </motion.div>

@@ -7,12 +7,12 @@ const Experience = () => {
 
 
   return (
-    <div id="work" className="text-chalk min-h-screen md:p-20 md:px-40 lg:px-40 bg-[#152617] py-10">
-      <motion.h1 whileHover={{translateY: -7}} className="text-[#BFF205] font-bold md:text-6xl lg:text-6xl text-5xl px-10 sm:px-20">
+    <div id="work" className="text-chalk min-h-screen md:py-20 lg:py-20 md:px-20 lg:px-20 bg-[#152617] py-10">
+      <motion.h1 whileHover={{translateY: -7}} className="text-[#BFF205] font-bold md:text-6xl lg:text-6xl text-5xl px-10 sm:px-20 md:px-10 lg:px-10">
         Experiences
       </motion.h1>
       <div className="">
-        <div id="timeline" className="text-chalk grid gap-4 py-10 px-4 sm:px-20 md:px-20 lg:px-20">
+        <div id="timeline" className="text-chalk grid gap-4 py-10 px-4 sm:px-20 md:px-40 md:mr-40 lg:px-40">
           
           {expData.map((exp) => (
             <motion.div

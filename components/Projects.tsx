@@ -97,8 +97,8 @@ const Projects = () => {
     };
 
     return(
-      <div id='projects' className='md:p-20 lg:p-20 bg-chalk'>
-          <h1 className='text-[#152617] font-bold text-6xl px-20'>`Projects`</h1>
+      <div id='projects' className='py-10 bg-chalk lg:px-20 sm:px-20 px-4 md:px-20'>
+          <h1 className='text-[#152617] font-bold text-6xl px-6'>Projects</h1>
           <div id="general-projects" className="grid place-content-center py-10">
           <div id="featured-project" className="lg:w-155 md:w-128">
             <a href={featured.link} target='_blank'>
@@ -106,7 +106,7 @@ const Projects = () => {
               variants={slashMotion} 
               id="featured" className="bg-white rounded-midxl shadow-lg">
                 <div>
-                <motion.div variants={slashMotion} className="text-blue-700 z-20 px-20 pt-10 flex place-content-between font-semibold text-lg">
+                <motion.div variants={slashMotion} className="text-blue-700 z-20 px-10 sm:px-20 md:px-20 lg:px-20 pt-10 flex place-content-between font-semibold text-lg">
                   <p  className="">[01]</p>
                   <Link href={featured.github}><p className="scale-150"><UilGithub/></p></Link>
                   <p className="">Featured</p>
@@ -119,7 +119,7 @@ const Projects = () => {
                   <p>{featured.description}</p>
                   
                 </div>
-                <motion.div variants={slashMotion} className="text-blue-700  z-20 px-20 pb-10 flex place-content-between font-semibold text-lg">
+                <motion.div variants={slashMotion} className="text-blue-700  z-20 px-10 sm:px-20 md:px-20 lg:px-20 pb-10 flex place-content-between font-semibold text-lg">
                   <p className="">Check on GitHub</p>
                   <p className=""><UilArrowUpRight/></p>
                 </motion.div>
@@ -128,7 +128,7 @@ const Projects = () => {
             </a>
           </div>
 
-          <div id="other-project" className="lg:flex h-full lg:flex-wrap lg:mt-2 md:w-128 lg:w-155 lg:gap-2">
+          <div id="other-project" className="md:flex lg:flex md:flex-wrap lg:flex-wrap gap-2 mt-2 sm:w-full md:w-128 lg:w-155 place-content-center">
 
           {project_list.map((project, i)=>{
 
@@ -141,12 +141,12 @@ const Projects = () => {
             }
 
             return(
-              <div key={i} className="lg:w-5000 xs:mt-3 lg:mt-0 md:mt-3">
+              <div key={i} className="lg:w-5000 mt-2 sm:mt-4 md:mt-0 lg:mt-0 sm:mt-0 lg:mt-0 md:mt-3">
                 <a  href={link} target='_blank' className="">
               <motion.div initial="rest" whileHover="hover"
               variants={slashMotion} 
               id="featured" className="bg-white shadow-lg rounded-midxl h-full">
-                <motion.div variants={slashMotion} className="z-20 px-20 pt-10 flex place-content-between font-semibold text-lg text-blue-500">
+                <motion.div variants={slashMotion} className="z-20 px-10 sm:px-20 md:px-20 lg:px-20 pt-10 flex place-content-between font-semibold text-lg text-blue-500">
                   <p className="">[0{i+2}]</p>
                   <Link href={project.github}><p className="scale-150"><UilGithub/></p></Link>
                 </motion.div>
@@ -160,12 +160,12 @@ const Projects = () => {
                   <p className="text-black">{project.description}</p>
                 </div>
 
-                {canLaunch && <motion.div variants={slashMotion} className="text-blue-500 z-20 px-20 pb-10 flex place-content-between text-lg">
+                {canLaunch && <motion.div variants={slashMotion} className="text-blue-500 z-20 px-10 sm:px-20 md:px-20 lg:px-20 pb-10 flex place-content-between text-lg">
                   <p className="">Launch Project</p>
                   <p className=""><UilArrowUpRight/></p>
                 </motion.div>}
 
-                {!canLaunch && <motion.div variants={slashMotion} className="text-blue-500 z-20 px-20 pb-10 flex place-content-between text-lg">
+                {!canLaunch && <motion.div variants={slashMotion} className="text-blue-500 z-20 px-10 sm:px-20 md:px-20 lg:px-20 pb-10 flex place-content-between text-lg">
                   <p className="">Check on GitHub</p>
                   <p className=""><UilArrowUpRight/></p>
                 </motion.div>}
