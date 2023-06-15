@@ -88,7 +88,7 @@ const Intro = () => {
             {"</div>"}
           </p>
         </motion.div>
-        <motion.div whileHover={{scale: 1.03, transition: {duration: 0.2}}}
+        <motion.div whileHover={{translateY:-7}}
               className=""
             >
               <Image alt="ojas singh" height="450px" width="325px" className="rounded-midxl object-cover" src={ojas}/>

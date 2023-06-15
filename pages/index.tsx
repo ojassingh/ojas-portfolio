@@ -12,9 +12,9 @@ import { motion } from "framer-motion";
 
 const Home: NextPage = () => {
   return (
-    <div className="overflow-x-clip h-screen scrollbar-thin scrollbar scrollbar-thumb-cyan-400 scrollbar-rounded-full">
+    <div className="">
       <div>
-        {/* <Navbar/> */}
+        <Navbar/>
         <Front />
         <Intro />
         <Experience />

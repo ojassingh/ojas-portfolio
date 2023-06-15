@@ -62,7 +62,7 @@ const Front: NextPage = () => {
         />
       </motion.div>
       <div id="contacts" className="mx-auto p-10 mt-10 text-[#84A60A] grid place-content-center gap-8">
-        <p className="mx-auto">Student at the University of Toronto with strong fundamentals in full-stack development.</p>
+        <p className="mx-auto">Student at the University of Toronto with strong fundamentals in full-stack development</p>
 
         <div className="flex gap-8 scale-110 mx-auto">
            {links.map((link) => (

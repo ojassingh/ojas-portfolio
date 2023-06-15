@@ -1,39 +1,18 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import navItems from './NavData';
+import Link from 'next/link';
 
 const NavBar = () => {
-  const [isSticky, setIsSticky] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
-    <motion.nav
-      className={`fixed ${
-        isSticky ? 'top-0 left-0 w-full' : 'right-0 top-0 h-screen w-16'
-      } bg-gray-800 text-white flex items-center justify-center`}
-      initial={{ x: -100 }}
-      animate={{ x: 0 }}
-      transition={{ type: 'spring', stiffness: 50 }}
-    >
+    <motion.nav className='fixed bottom-0 right-0 p-20'>
       <ul className="space-y-4">
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Contact</li>
+        {navItems.map((item) => {
+          return(<li key={item.id} className="text-[#84A60A] text-sm tracking-wide">
+            <Link href={item.link}>{item.name}</Link>
+          </li>)
+        })}
       </ul>
     </motion.nav>
   );
