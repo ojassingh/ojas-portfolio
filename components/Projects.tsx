@@ -146,26 +146,26 @@ const Projects = () => {
               <motion.div initial="rest" whileHover="hover"
               variants={slashMotion} 
               id="featured" className="bg-white shadow-lg rounded-midxl h-full">
-                <motion.div variants={slashMotion} className="z-20 px-20 pt-10 flex place-content-between font-semibold text-lg text-cyan-500">
+                <motion.div variants={slashMotion} className="z-20 px-20 pt-10 flex place-content-between font-semibold text-lg text-blue-500">
                   <p className="">[0{i+2}]</p>
                   <Link href={project.github}><p className="scale-150"><UilGithub/></p></Link>
                 </motion.div>
                 <motion.h1  
                 variants={textMotion} 
-                className="h-40 z-0 text-chalk font-semibold text-5xl grid text-center grid place-content-center m-10">
+                className="h-40 z-0 text-blue-500 font-semibold text-5xl grid text-center grid place-content-center m-10">
                   {project.name}
                 </motion.h1>
-                <div className="-mt-4 pb-10 grid place-content-center text-cyan-400 text-center gap-4 px-10">
+                <div className="-mt-4 pb-10 grid place-content-center text-black text-center gap-4 px-10">
                   <p className="font-medium">{project.techStack}</p>
-                  <p className="text-chalk">{project.description}</p>
+                  <p className="text-black">{project.description}</p>
                 </div>
 
-                {canLaunch && <motion.div variants={slashMotion} className="text-cyan-500 z-20 px-20 pb-10 flex place-content-between text-lg">
+                {canLaunch && <motion.div variants={slashMotion} className="text-blue-500 z-20 px-20 pb-10 flex place-content-between text-lg">
                   <p className="">Launch Project</p>
                   <p className=""><UilArrowUpRight/></p>
                 </motion.div>}
 
-                {!canLaunch && <motion.div variants={slashMotion} className="text-cyan-500 z-20 px-20 pb-10 flex place-content-between text-lg">
+                {!canLaunch && <motion.div variants={slashMotion} className="text-blue-500 z-20 px-20 pb-10 flex place-content-between text-lg">
                   <p className="">Check on GitHub</p>
                   <p className=""><UilArrowUpRight/></p>
                 </motion.div>}
