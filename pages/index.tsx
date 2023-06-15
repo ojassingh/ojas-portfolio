@@ -9,13 +9,13 @@ import Front from "../components/Front";
 const Home: NextPage = () => {
   return (
     <div className="">
-      <div>
+       <div className="hidden md:block lg:block">
         <Navbar/>
+        </div>
         <Front />
         <Intro />
         <Experience />
         <Projects />
-      </div>
       <Footer />
     </div>
   );

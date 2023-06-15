@@ -45,7 +45,7 @@ const Front: NextPage = () => {
   return (
     <div className="grid place-content-center h-screen bg-[#152617]">
       <motion.div
-        className="text-[#BFF205] md:text-9xl lg:text-9xl text-6xl font-medium tracking-tighter flex mx-auto"
+        className="text-[#BFF205] sm:text-8xl md:text-9xl lg:text-9xl text-6xl font-medium tracking-tighter flex mx-auto"
         whileHover={{ translateY: -7 }}
       >
         <h1>
