@@ -98,7 +98,7 @@ const Projects = () => {
 
     return(
       <div id='projects' className='py-10 bg-chalk lg:px-20 sm:px-20 px-4 md:px-20'>
-          <h1 className='text-[#152617] font-bold text-6xl px-6'>Projects</h1>
+          <h1 className='text-[#152617] font-bold text-5xl sm:text-6xl md:text-6xl lg:text-7xl px-6'>Projects</h1>
           <div id="general-projects" className="grid place-content-center py-10">
           <div id="featured-project" className="lg:w-155 md:w-128">
             <a href={featured.link} target='_blank'>
@@ -113,7 +113,7 @@ const Projects = () => {
                 </motion.div>
                 <motion.h1  
                 variants={textMotion} 
-                className="h-40 z-0 h-55 text-blue-600  font-semibold text-6xl grid text-center grid place-content-center">{featured.name}</motion.h1>
+                className="h-40 z-0 h-55 text-blue-600  font-semibold text-4xl sm:text-6xl md:text-6xl lg:text-6xl grid text-center grid place-content-center">{featured.name}</motion.h1>
                 <div className="-mt-20 py-10 grid place-content-center text-center gap-2 px-10">
                   <p className="font-medium">{featured.techStack}</p>
                   <p>{featured.description}</p>
@@ -152,7 +152,7 @@ const Projects = () => {
                 </motion.div>
                 <motion.h1  
                 variants={textMotion} 
-                className="h-40 z-0 text-blue-600 font-semibold text-5xl grid text-center grid place-content-center m-10">
+                className="h-40 z-0 text-blue-600 font-semibold text-4xl sm:text-5xl md:text-5xl lg:text-5xl grid text-center grid place-content-center m-10">
                   {project.name}
                 </motion.h1>
                 <div className="-mt-4 pb-10 grid place-content-center text-black text-center gap-4 px-10">
