@@ -98,7 +98,7 @@ const Projects = () => {
 
     return(
       <div id='projects' className='py-10 bg-chalk lg:px-20 sm:px-20 px-4 md:px-20'>
-          <h1 className='text-[#152617] font-bold text-5xl sm:text-6xl md:text-6xl lg:text-7xl px-6'>Projects</h1>
+          <motion.h1 whileHover={{translateY: -7}} className='text-[#152617] font-bold text-5xl sm:text-6xl md:text-6xl lg:text-7xl px-6'>Projects</motion.h1>
           <div id="general-projects" className="grid place-content-center py-10">
           <div id="featured-project" className="lg:w-155 md:w-128">
             <a href={featured.link} target='_blank'>

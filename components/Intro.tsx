@@ -9,7 +9,7 @@ const Intro = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div ref={ref} id="home" className="py-20 sm:px-20 md:px-20 lg:px-20 px-10  bg-chalk min-h-screen">
+    <div ref={ref} id="about" className="py-20 sm:px-20 md:px-20 lg:px-20 px-10  bg-chalk min-h-screen">
       <motion.div
         style={{
           transform: isInView ? "none" : "translateY(+200px)",

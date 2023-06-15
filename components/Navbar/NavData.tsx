@@ -10,11 +10,16 @@ const navItems = [
     },
     {
       id: 2,
+      name: "≫ about",
+      link: "#about",
+    },
+    {
+      id: 3,
       name: "≫ work-exp",
       link: "#work",
     },
     {
-      id: 3,
+      id: 4,
       name: "≫ projects",
       link: "#projects",
     }
