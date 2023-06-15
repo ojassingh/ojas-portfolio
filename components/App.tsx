@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, OrbitControls } from "@react-three/drei";
 import { motion, AnimatePresence } from "framer-motion";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar/Navbar";
 import Typewriter from "typewriter-effect";
 
 export default function App() {
