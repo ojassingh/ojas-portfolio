@@ -97,8 +97,8 @@ const Projects = () => {
     };
 
     return(
-      <div id='projects' className='p-20'>
-          <h1 className='bg-gradient-to-r from-cyan-600 to-blue-900 text-transparent bg-clip-text brightness-175 font-bold text-6xl px-20'>≫ selected-works</h1>
+      <div id='projects' className='p-20 bg-chalk'>
+          <h1 className='text-[#152617] font-bold text-6xl px-20'>`Projects`</h1>
           <div id="general-projects" className="grid place-content-center py-10">
           <div id="featured-project" className="lg:w-155 md:w-128">
             <a href={featured.link} target='_blank'>

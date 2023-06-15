@@ -7,13 +7,14 @@ import Navigation from "../components/Navigation";
 import Experience from "../components/Experience/Experience";
 import Footer from "../components/Footer";
 import App from "../components/App";
+import Front from "../components/Front";
 import { motion } from "framer-motion";
 
 const Home: NextPage = () => {
   return (
     <div className="overflow-x-clip h-screen scrollbar-thin scrollbar scrollbar-thumb-cyan-400 scrollbar-rounded-full">
       <div className="bg-black">
-        <App />
+        <Front />
         <Intro />
         <Experience />
         <Projects />

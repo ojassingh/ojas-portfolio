@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const About = () => {
     return(
-      <div id='about' className='lg:px-40 lg:-mt-20 md:-mt-40 md:px-10 xs:px-4'>
-          <h1 className='lg:text-6xl md:text-5xl md:px-4 text-chalk font-semibold xs:text-3xl '>≫ more-about-me</h1>
+      <div id='about' className='bg-[#0D0D0D]'>
+          <h1 className='font-semibold text-[#BFF205]'>≫ more-about-me</h1>
           <div className="lg:flex pt-10 pb-20 lg:gap-10">
             <motion.div whileHover={{scale: 1.03, transition: {duration: 0.2}}} className="text-chalk lg:flex-1 lg:mx-0 md:w-128 lg:w-128  md:mx-10 text-lg rounded-midxl bg-black p-16 xs:p-8 leading-flow">
               <p>
