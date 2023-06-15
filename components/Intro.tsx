@@ -21,7 +21,7 @@ const Intro = () => {
     <div
       ref={ref}
       id="home"
-      className="py-20 px-20 grid place-content-center bg-chalk min-h-screen"
+      className="py-20 px-20  bg-chalk min-h-screen"
     >
       <motion.div
         style={{

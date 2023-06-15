@@ -9,20 +9,15 @@ const navItems = [
       link: "/",
     },
     {
-      id: 3,
+      id: 2,
       name: "≫ work-exp",
       link: "#work",
     },
     {
-      id: 4,
+      id: 3,
       name: "≫ projects",
       link: "#projects",
-    },
-
-    // {
-    //     name: '// contact',
-    //     link: '#contact'
-    // },
+    }
   ];
 
   export default navItems
