@@ -39,7 +39,7 @@ const Intro = () => {
             </motion.h1>
           </motion.div>
 
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-4">
         <motion.div
           whileHover={{ translateY: -7 }}
           className="px-10 pt-5"
@@ -61,7 +61,7 @@ const Intro = () => {
               <p className="text-lg text-[#84A60A] tracking-wide">
                 {"<p>"}
               </p>
-              <div className="w-128 border-l-2 border-gray-500/50 ml-4">
+              <div className="md:w-128 lg:w-128 border-l-2 border-gray-500/50 ml-4">
                 <p className="text-lg ml-2 leading-flow text-black">
                 I am a currently a full-time student at the <span className="text-[#84A60A]">University of Toronto</span>, in the <span className="text-[#84A60A]">Computer Science, Mathematics and Statistics</span> program. I started building web applications about a year ago, and I enjoy building scaleable, and impactful projects.
                 </p>
@@ -74,7 +74,7 @@ const Intro = () => {
               <p className="text-lg text-[#84A60A] tracking-wide">
                 {"<p>"}
               </p>
-              <div className="w-128 border-l-2 border-gray-500/50 ml-4">
+              <div className="md:w-128 lg:w-128 border-l-2 border-gray-500/50 ml-4">
                 <p className="text-lg ml-2 leading-flow text-black">
                 I'm always learning something new, and I'm currently experimenting with large-language models. I primarily use <span className="text-[#84A60A]">Typescript</span> for my full-stack projects, and <span className="text-[#84A60A]">Python</span> for my machine-learning ones. Check out my resume, and GitHub to learn more about my work.
                 </p>

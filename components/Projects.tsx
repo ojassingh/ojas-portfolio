@@ -97,7 +97,7 @@ const Projects = () => {
     };
 
     return(
-      <div id='projects' className='p-20 bg-chalk'>
+      <div id='projects' className='md:p-20 lg:p-20 bg-chalk'>
           <h1 className='text-[#152617] font-bold text-6xl px-20'>`Projects`</h1>
           <div id="general-projects" className="grid place-content-center py-10">
           <div id="featured-project" className="lg:w-155 md:w-128">
