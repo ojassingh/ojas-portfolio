@@ -51,7 +51,7 @@ const Intro = () => {
                       Computer Science, Mathematics and Statistics
                     </span>{" "}
                     program. I started building web applications about a year
-                    ago, and I enjoy building scaleable, and impactful projects.
+                    ago, and I enjoy building scaleable and impactful projects.
                   </p>
                 </div>
                 <p className="mt-2 text-[#84A60A] text-lg tracking-wide">
@@ -62,13 +62,13 @@ const Intro = () => {
                 <p className="text-lg text-[#84A60A] tracking-wide">{"<p>"}</p>
                 <div className="md:w-128 lg:w-128 border-l-2 border-gray-500/50 ml-4">
                   <p className="text-lg ml-2 leading-flow text-black">
-                    I'm always learning something new, and I'm currently
-                    experimenting with large-language models. I primarily use{" "}
+                    I'm always learning something new. I'm currently
+                    experimenting with deep learning concepts. I primarily use{" "}
                     <span className="text-[#84A60A]">Typescript</span> for my
                     full-stack projects, and{" "}
                     <span className="text-[#84A60A]">Python</span> for my
-                    machine-learning ones. Check out my resume, and GitHub to
-                    learn more about my work.
+                    machine-learning ones. Check out my résumé and GitHub to
+                    learn more about my work. Or shoot me a message, I love connecting with people!
                   </p>
                 </div>
                 <p className="mt-2 text-[#84A60A] text-lg tracking-wide">
