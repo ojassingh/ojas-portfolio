@@ -104,7 +104,7 @@ const Projects = () => {
             <a href={featured.link} target='_blank'>
               <motion.div initial="rest" whileHover="hover"
               variants={slashMotion} 
-              id="featured" className="bg-chalk rounded-midxl">
+              id="featured" className="bg-white rounded-midxl shadow-lg">
                 <div>
                 <motion.div variants={slashMotion} className="text-blue-700 z-20 px-20 pt-10 flex place-content-between font-semibold text-lg">
                   <p  className="">[01]</p>
@@ -145,7 +145,7 @@ const Projects = () => {
                 <a  href={link} target='_blank' className="">
               <motion.div initial="rest" whileHover="hover"
               variants={slashMotion} 
-              id="featured" className="bg-extrablue/20 rounded-midxl h-full">
+              id="featured" className="bg-white shadow-lg rounded-midxl h-full">
                 <motion.div variants={slashMotion} className="z-20 px-20 pt-10 flex place-content-between font-semibold text-lg text-cyan-500">
                   <p className="">[0{i+2}]</p>
                   <Link href={project.github}><p className="scale-150"><UilGithub/></p></Link>
