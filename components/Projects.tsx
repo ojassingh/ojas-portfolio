@@ -106,7 +106,7 @@ const Projects = () => {
               variants={slashMotion} 
               id="featured" className="bg-white rounded-midxl shadow-lg">
                 <div>
-                <motion.div variants={slashMotion} className="text-blue-700 z-20 px-10 sm:px-20 md:px-20 lg:px-20 pt-10 flex place-content-between font-semibold text-lg">
+                <motion.div variants={slashMotion} className="text-blue-600 z-20 px-10 sm:px-20 md:px-20 lg:px-20 pt-10 flex place-content-between font-semibold text-lg">
                   <p  className="">[01]</p>
                   <Link href={featured.github}><p className="scale-150"><UilGithub/></p></Link>
                   <p className="">Featured</p>
@@ -119,7 +119,7 @@ const Projects = () => {
                   <p>{featured.description}</p>
                   
                 </div>
-                <motion.div variants={slashMotion} className="text-blue-700  z-20 px-10 sm:px-20 md:px-20 lg:px-20 pb-10 flex place-content-between font-semibold text-lg">
+                <motion.div variants={slashMotion} className="text-blue-600  z-20 px-10 sm:px-20 md:px-20 lg:px-20 pb-10 flex place-content-between font-semibold text-lg">
                   <p className="">Check on GitHub</p>
                   <p className=""><UilArrowUpRight/></p>
                 </motion.div>
@@ -146,13 +146,13 @@ const Projects = () => {
               <motion.div initial="rest" whileHover="hover"
               variants={slashMotion} 
               id="featured" className="bg-white shadow-lg rounded-midxl h-full">
-                <motion.div variants={slashMotion} className="z-20 px-10 sm:px-20 md:px-20 lg:px-20 pt-10 flex place-content-between font-semibold text-lg text-blue-500">
+                <motion.div variants={slashMotion} className="z-20 px-10 sm:px-20 md:px-20 lg:px-20 pt-10 flex place-content-between font-semibold text-lg text-blue-600">
                   <p className="">[0{i+2}]</p>
                   <Link href={project.github}><p className="scale-150"><UilGithub/></p></Link>
                 </motion.div>
                 <motion.h1  
                 variants={textMotion} 
-                className="h-40 z-0 text-blue-500 font-semibold text-5xl grid text-center grid place-content-center m-10">
+                className="h-40 z-0 text-blue-600 font-semibold text-5xl grid text-center grid place-content-center m-10">
                   {project.name}
                 </motion.h1>
                 <div className="-mt-4 pb-10 grid place-content-center text-black text-center gap-4 px-10">
@@ -160,12 +160,12 @@ const Projects = () => {
                   <p className="text-black">{project.description}</p>
                 </div>
 
-                {canLaunch && <motion.div variants={slashMotion} className="text-blue-500 z-20 px-10 sm:px-20 md:px-20 lg:px-20 pb-10 flex place-content-between text-lg">
+                {canLaunch && <motion.div variants={slashMotion} className="text-blue-600 z-20 px-10 sm:px-20 md:px-20 lg:px-20 pb-10 flex place-content-between text-lg">
                   <p className="">Launch Project</p>
                   <p className=""><UilArrowUpRight/></p>
                 </motion.div>}
 
-                {!canLaunch && <motion.div variants={slashMotion} className="text-blue-500 z-20 px-10 sm:px-20 md:px-20 lg:px-20 pb-10 flex place-content-between text-lg">
+                {!canLaunch && <motion.div variants={slashMotion} className="text-blue-600 z-20 px-10 sm:px-20 md:px-20 lg:px-20 pb-10 flex place-content-between text-lg">
                   <p className="">Check on GitHub</p>
                   <p className=""><UilArrowUpRight/></p>
                 </motion.div>}
