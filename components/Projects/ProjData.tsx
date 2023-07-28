@@ -10,10 +10,10 @@ type Project = {
 
     let featured: Project = {
       id: 1,
-      name: "Sentiment Analysis Bot",
+      name: "Sentiment Analysis Blog",
       link: "https://github.com/ojassingh/sentyblog",
       github: "https://github.com/ojassingh/sentyblog",
-      description: "An app that recognises text sentiment, powered by Tensorflow.js ",
+      description: "An app that recognises text sentiment and toxicity, powered by Tensorflow.js ",
       techStack: "Typescript, Next.js, AWS Amplify, GraphQL, TensorFlow.js"
     }
 
