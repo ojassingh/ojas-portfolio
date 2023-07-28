@@ -19,6 +19,22 @@ type Project = {
 
     let project_list: Project[] = [
       {
+        id: 8, 
+        name: "GPT Python Tutor",  
+        link: '#',
+        github: "https://github.com/ojassingh/ai-teaches-python",
+        description: 'An interactive web app that teaches introductory Python with Chat-GPT',
+        techStack: 'Typescript, React, Next.js, OpenAI API, Docker'    
+      },
+      {
+        id: 7, 
+        name: "Spotify Analytics",  
+        link: '#',
+        github: "https://github.com/ojassingh/spotify-analytics",
+        description: 'A data visualisation dashboard for Spotify users',
+        techStack: 'Typescript, React, Next.js, Spotify Web API, Axios, Plotly.js'    
+      },
+      {
         id: 6, 
         name: "Go Real-Time Chat App",  
         link: '#',
@@ -40,7 +56,7 @@ type Project = {
         link: '#',
         github: "https://github.com/ojassingh/crbn",
         description: 'An e-commerce store built to make online shopping more sustainable',
-        techStack: 'Typescript, Next.js, PostgreSQL, Prisma, GraphQL, Jira'    
+        techStack: 'Typescript, Next.js, PostgreSQL, Prisma, GraphQL'    
       },
       {
         id: 3, 
