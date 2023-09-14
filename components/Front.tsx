@@ -11,12 +11,13 @@ import Image from "next/image";
 import ojas from "../public/ojas2.jpg";
 import { NextPage } from "next";
 
+
 const Front: NextPage = () => {
   const links = [
     {
       id: 1,
       name: "Résumé",
-      link: "https://drive.google.com/file/d/1MrYvjcWwpSkWKQgB75qmeEzCmfNQxJWz/view?usp=sharing",
+      link: "https://drive.google.com/file/d/1MreaUpwGJyBfmF9hkMu-STQdxOyzh2jf/view?usp=drive_link",
       icon: null,
     },
     {
